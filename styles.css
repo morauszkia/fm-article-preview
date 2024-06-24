@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "Manrope";
+  font-weight: 500;
+  src: url("./assets/fonts/manrope-medium-webfont.woff2") format("woff2"),
+    url("./assets/fonts/manrope-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-weight: 700;
+  src: url("./assets/fonts/manrope-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/manrope-bold-webfont.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --font-size-main: 0.8125rem;
+}
+
+body {
+  font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: var(--font-size-main);
+  font-weight: 500;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
