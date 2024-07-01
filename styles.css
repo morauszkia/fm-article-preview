@@ -56,7 +56,6 @@ main {
 
 .card {
   container-type: inline-size;
-  min-height: auto;
   width: min(85%, 45.625rem);
   background-color: #fff;
   border-radius: 10px;
@@ -64,7 +63,7 @@ main {
 }
 
 .card__img {
-  height: 60cqi;
+  height: min(60cqi, 15rem);
   width: 100%;
   object-fit: cover;
   object-position: 50% 70%;
@@ -142,4 +141,15 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@container (width > 35rem) {
+  .card__content-container {
+    display: flex;
+  }
+
+  .card__img {
+    height: auto;
+    width: 40%;
+  }
 }
