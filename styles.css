@@ -191,6 +191,7 @@ main {
   align-items: center;
   gap: 1.25em;
   flex-shrink: 0;
+  list-style-type: none;
 }
 
 .share__social-icon {
